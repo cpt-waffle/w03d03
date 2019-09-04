@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Demo 1</title>
+</head>
+
+<body>
+  <% if (!user) {%>
+  <h2>You shall not pass!!!</h2>
+  <% } else { %>
+    <p> User has logged in!!! </p>
+    <p> Username <%= user.username %></p>
+    <p> Password <%= user.password %></p>
+  <% } %>
+  <form method='POST' action='/login'>
+    <p><input type='text' name='username'/></p>
+    <p><input type="password" name="password"/></p>
+    <p><input type='submit'>Click me to login</input></p>
+  </form>
+</body>
+
+</html>
+
+
+
