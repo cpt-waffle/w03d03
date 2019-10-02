@@ -47,7 +47,7 @@ The best part about this, well its gotten alot cleaner than having everything in
 #### Security
 
 So far we figured out that cookies arent secure, but they are very useful in tracking login. So what can we use instead of them?
-
+https://overthewire.org/wargames/
 We can use `cookie-session` which is basically a hashed cookie. We quickly looked into how to convert our login into `cookie-session` ( in the repo )
 
 We quickly talked about a hashing algorithm/function called bcrypt. I believe it's the most popular option for password hashing.
@@ -55,3 +55,10 @@ We quickly talked about a hashing algorithm/function called bcrypt. I believe it
 Instead of storing cleartext passwords, we "hash" them which is essentially "one way encryption" (original data is lost and cannot be retrieved and the hashed value is expected to be unique enough such that no other password value will generate the same unique hashed value).
 
 Whenever a user attempts login, we need to re-hash their login attempt's password and compare the hashed value with the one we have stored from before.
+
+#### Resources 
+
+A few people were asking me about some of networking/pen testing resources to try out for ethical hacking.
+
+[overthewire](https://overthewire.org/wargames/)
+[exploit-db](https://www.exploit-db.com/)
